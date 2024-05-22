@@ -1,5 +1,26 @@
-/* CSS RESET */
+/* CSS CUSTOM PROPERTIES */
 
+:root {
+  --clr-primary-medium: hsl(176, 50%, 47%);
+  --clr-primary-dark: hsl(176, 72%, 28%);
+
+  --clr-neutral-lightest: hsl(100, 100%, 100%);
+  --clr-neutral-light: hsl(0, 0%, 85%);
+  --clr-neutral-dark: hsl(0, 0%, 48%);
+  --clr-neutral-darkest: hsl(0, 0%, 0%);
+
+  --clr-overlay: hsla(0, 0%, 0%, 0.35);
+
+  --fs-md: 1.5rem;
+  --fs-base: 1rem;
+  --fs-sm: 0.875rem;
+
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --fw-regular: 400;
+}
+
+/* CSS RESET */
 *,
 *::before,
 *::after {
@@ -24,4 +45,18 @@ body {
 body {
   min-height: 100vh;
   line-height: 1.5;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
 }
